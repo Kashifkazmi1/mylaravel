@@ -5,6 +5,7 @@ use App\Http\Controllers\photoController;
 use App\Http\Controllers\singleActionControoler;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registrationController;
+use App\Http\Controllers\customerRegistrationController;
 use App\Models\Table_customers;
 
 
@@ -40,3 +41,5 @@ echo '</pre>';
 
 });
 
+Route::get('/customerregister',[customerRegistrationController::class,'index']);
+Route::post('/customerregister',[customerRegistrationController::class,'store']);
