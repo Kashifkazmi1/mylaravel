@@ -16,6 +16,7 @@ class AddColumnsToTableCustomersTable extends Migration
         Schema::table('table_customers', function (Blueprint $table) {
             $table->string('country',50)->nullable()->after('address');
             $table->string('state',50)->nullable()->after('address');
+            $table->string('email')->nullable()->after('name');
         });
     }
 

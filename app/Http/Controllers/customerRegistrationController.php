@@ -19,10 +19,14 @@ class customerRegistrationController extends Controller
     $customer->state = $request['state'];
     $customer->country = $request['country'];
     $customer->dob = $request['dob'];
-    $customer->gender = $request['gender'];
+    //$customer->gender = $request['gender'];
     $customer->password = md5($request['password']);
     $customer->save();
-
+   return redirect('customer/view');
    }
-
+ public function view(){
+  $customers = ModelsTable_customers::all();
+  $data = compact('customers');
+  return view('layouts.customer-view')->with($data);
+ }
 }

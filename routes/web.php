@@ -43,3 +43,4 @@ echo '</pre>';
 
 Route::get('/customerregister',[customerRegistrationController::class,'index']);
 Route::post('/customerregister',[customerRegistrationController::class,'store']);
+Route::get('customer/view',[customerRegistrationController::class,'view']);

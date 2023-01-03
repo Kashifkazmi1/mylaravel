@@ -41,20 +41,20 @@
               <input type="text" class="form-control" name="address" id="exampleInputEmail1" aria-describedby="emailHelp">
          </div>
 <label for="form-chek">Gender</label>
-         <div class="form-check" name="gender">
+         <div class="form-check" >
             <label class="form-check-label" for="flexRadioDefault1">
                 Male
               </label>
-            <input class="form-check-input"  type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <input class="form-check-input" value="male"  type="radio" name="gender" id="flexRadioDefault1">
             </div>
           <div class="form-check">
-            <input class="form-check-input"  type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <input class="form-check-input"  value="female" type="radio" name="gender" id="flexRadioDefault2">
             <label class="form-check-label" for="flexRadioDefault2">
              Female
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input"  type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <input class="form-check-input" value="other" type="radio" name="gender" id="flexRadioDefault2">
             <label class="form-check-label" for="flexRadioDefault2">
              other
             </label>
