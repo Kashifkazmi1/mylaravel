@@ -53,12 +53,7 @@
              Female
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" value="other" type="radio" name="gender" id="flexRadioDefault2">
-            <label class="form-check-label" for="flexRadioDefault2">
-             other
-            </label>
-          </div>
+
 
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Date of birth</label>

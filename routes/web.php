@@ -44,3 +44,4 @@ echo '</pre>';
 Route::get('/customerregister',[customerRegistrationController::class,'index']);
 Route::post('/customerregister',[customerRegistrationController::class,'store']);
 Route::get('customer/view',[customerRegistrationController::class,'view']);
+Route::get('/customer/delete/{id}',[customerRegistrationController::class,'delete'])->name('customer.delete');
